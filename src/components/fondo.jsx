@@ -1,16 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Fondo = () => {
-    const setBlackBackground = () => {
-        document.body.style.backgroundColor = 'black';
-    };
+export const Switch = () => {
+    const [theme, setTheme] = useState('light');
+
+    const handleChange = (e) => setTheme(e.target.checked ? 'dark' : 'light');
 
     return (
-        <div>
-            <button onClick={setBlackBackground}>Set Black Background</button>
-            {/* Your content goes here */}
+        <div className="container-switch">
+            <span>Change Theme </span>
+            <label className="switch">
+                <input type="checkbox" onChange={handleChange} checked={theme === 'dark'} />
+                <span className="slider"></span>
+            </label>
         </div>
     );
 };
 
-export default Fondo;
+    const [theme, setTheme] = useState('light');
+
+    const handleChange = (e) => setTheme(e.target.checked ? 'dark' : 'light');
+
+    useEffect(() => {
+        document.body.setAttribute('data-theme', theme);
+    }, [theme]);
+;
+
+    return (
+        <div className="container-switch">
+            <span>Change Theme </span>
+            <label className="switch">
+                <input type="checkbox" onChange={handleChange} checked={theme === 'dark'} />
+                <span className="slider"></span>
+            </label>
+        </div>
+    )
+export default Switch;

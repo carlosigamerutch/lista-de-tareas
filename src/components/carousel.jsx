@@ -6,24 +6,24 @@ function UncontrolledExample() {
     return (
         <Carousel>
             <Carousel.Item>
-                <img src={logo} alt="First slide" style={{ width: '25%', height: 'auto' }} />
+                <img src={logo} alt="mi mama y yo" style={{ width: '25%', height: 'auto' }} />
                 <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3>pasando en familia en puebla</h3>
+                    <p>año 2022  </p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <img src={logo1}  alt="Second slide" style={{ width: '25%', height: 'auto' }} />
+                <img src={logo1}  alt="boda de mi prima reina mayra en tijuana" style={{ width: '25%', height: 'auto' }} />
                 <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>coviviendo en tijuana </h3>
+                    <p>año 2021</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <img src={logo2} alt="Third slide" style={{ width: '25%', height: 'auto' }} />
+                <img src={logo2} alt="paseo en la catedral" style={{ width: '25%', height: 'auto' }} />
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h3>coviviendo con mi mama en la catedral</h3>
+                    <p>año 2022</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
