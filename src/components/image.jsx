@@ -1,9 +1,10 @@
 
 import Image from 'react-bootstrap/Image';
+import logo from './640px-Logotipo_UTCH.png';
 
 function FluidExample() {
     return (
-        <Image src={require('C:/Users/carlo/OneDrive - Universidad Tecnológica de Chihuahua/Pictures/logotipo de la utch/640px-Logotipo_UTCH.png')} fluid />
+        <Image src={logo} fluid />
     );
 }
 
