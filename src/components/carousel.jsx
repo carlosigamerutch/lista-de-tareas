@@ -8,7 +8,7 @@ function UncontrolledExample() {
             <Carousel.Item>
                 <img src={logo} alt="mi mama y yo" style={{ width: '25%', height: 'auto' }} />
                 <Carousel.Caption>
-                    <h3>pasando en familia en puebla</h3>
+                    <h3>coviviendo con mi mama en la catedral</h3>
                     <p>año 2022  </p>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -22,7 +22,7 @@ function UncontrolledExample() {
             <Carousel.Item>
                 <img src={logo2} alt="paseo en la catedral" style={{ width: '25%', height: 'auto' }} />
                 <Carousel.Caption>
-                    <h3>coviviendo con mi mama en la catedral</h3>
+                    <h3>pasando en familia en puebla</h3>
                     <p>año 2022</p>
                 </Carousel.Caption>
             </Carousel.Item>

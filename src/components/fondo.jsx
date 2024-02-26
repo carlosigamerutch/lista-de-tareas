@@ -1,21 +1,6 @@
-import React, { useState } from 'react';
-
+import React, { useState,useEffect } from 'react';
+import 'App.css'
 export const Switch = () => {
-    const [theme, setTheme] = useState('light');
-
-    const handleChange = (e) => setTheme(e.target.checked ? 'dark' : 'light');
-
-    return (
-        <div className="container-switch">
-            <span>Change Theme </span>
-            <label className="switch">
-                <input type="checkbox" onChange={handleChange} checked={theme === 'dark'} />
-                <span className="slider"></span>
-            </label>
-        </div>
-    );
-};
-
     const [theme, setTheme] = useState('light');
 
     const handleChange = (e) => setTheme(e.target.checked ? 'dark' : 'light');
@@ -33,5 +18,5 @@ export const Switch = () => {
                 <span className="slider"></span>
             </label>
         </div>
-    )
+    )}
 export default Switch;

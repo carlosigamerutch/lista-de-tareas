@@ -11,9 +11,12 @@ import'fondo.jsx';
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
+
 //import FluidExample from 'components/image.jsx';
-import Fondo from 'fondo.jsx';
+
+import Switch from 'components/fondo.jsx'
 import UncontrolledExample from './components/carousel.jsx';
+
 function App() {
   return (
     <div className="App" style={{ textAlign: 'center' }}>
@@ -24,25 +27,26 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <Nav.Link href="https://www.utch.edu.mx/">mi escuela donde estudio</Nav.Link>
+              <NavDropdown title="acesos directos" id="basic-nav-dropdown">
+                <NavDropdown.Item href="https://open.spotify.com/__noul__?pfhp=2c2ccb58-8a92-4713-a1c0-8b43b3090b49">spotify</NavDropdown.Item>
+                <NavDropdown.Item href="https://www.utch.edu.mx/index.php/becas/">
+                  becas </NavDropdown.Item>
+                
+                <NavDropdown.Item href="https://github.com/">cuenta de github </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
-                  Separated link
+                  cerrar sesion
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-        <UncontrolledExample></UncontrolledExample>
+      <UncontrolledExample></UncontrolledExample>
       <Lista></Lista>
-    <Fondo></Fondo>
+      <Switch></Switch>
+      
     </div>
   );
 }
