@@ -5,8 +5,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import'fondo.jsx';
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
@@ -74,7 +72,7 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
         console.error('Error al leer el archivo de forma síncrona: ' + error);
       }     
 
-  
+
 /*const fs = require('fs').promises;
 const path = require('path');
 const process = require('process');
