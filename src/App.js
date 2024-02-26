@@ -26,7 +26,7 @@ function App() {
             <Nav className="me-auto">
               <Nav.Link href="http://localhost:3000">Home</Nav.Link>
               <Nav.Link href="https://www.utch.edu.mx/">mi escuela donde estudio</Nav.Link>
-              <NavDropdown title="acesos directos" id="basic-nav-dropdown">
+              <NavDropdown title="accesos directos" id="basic-nav-dropdown">
                 <NavDropdown.Item href="https://open.spotify.com/__noul__?pfhp=2c2ccb58-8a92-4713-a1c0-8b43b3090b49">spotify</NavDropdown.Item>
                 <NavDropdown.Item href="https://www.utch.edu.mx/index.php/becas/">
                   becas </NavDropdown.Item>
