@@ -26,7 +26,7 @@ function App() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="http://localhost:3000">Home</Nav.Link>
               <Nav.Link href="https://www.utch.edu.mx/">mi escuela donde estudio</Nav.Link>
               <NavDropdown title="acesos directos" id="basic-nav-dropdown">
                 <NavDropdown.Item href="https://open.spotify.com/__noul__?pfhp=2c2ccb58-8a92-4713-a1c0-8b43b3090b49">spotify</NavDropdown.Item>
@@ -35,9 +35,7 @@ function App() {
                 
                 <NavDropdown.Item href="https://github.com/">cuenta de github </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  cerrar sesion
-                </NavDropdown.Item>
+                
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
