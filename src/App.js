@@ -3,13 +3,27 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import UncontrolledExample from './components/carousel.jsx';
 import Lista from './components/lista.jsx';
 import Switch from 'components/fondo.jsx';
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 //import FluidExample from 'components/image.jsx';
+import UncontrolledExample from 'components/carousel.jsx';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <UncontrolledExample></UncontrolledExample>
+  },
+  {
+    path: "/Lista",
+    element: <Lista></Lista>
+  },
+]);
 function App() {
   return (
     <div className="App" style={{ textAlign: 'center' }}>
@@ -20,6 +34,7 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="http://localhost:3000">Home</Nav.Link>
+              <Nav.Link href="http://localhost:3000/lista">Lista</Nav.Link>
               <Nav.Link href="https://www.utch.edu.mx/">mi escuela donde estudio</Nav.Link>
               <NavDropdown title="accesos directos" id="basic-nav-dropdown">
                 <NavDropdown.Item href="https://open.spotify.com/__noul__?pfhp=2c2ccb58-8a92-4713-a1c0-8b43b3090b49">spotify</NavDropdown.Item>
@@ -34,8 +49,8 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <UncontrolledExample></UncontrolledExample>
-      <Lista></Lista>
+      
+      <RouterProvider router={router} />
       <Switch></Switch>
       
     </div>
