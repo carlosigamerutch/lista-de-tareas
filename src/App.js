@@ -1,14 +1,3 @@
-// Bootstrap CSS
-import "bootstrap/dist/css/bootstrap.min.css";
-// Bootstrap Bundle JS
-
-import 'style.css';
-
-//import FluidExample from 'components/image.jsx';
-
-import Switch from 'components/fondo.jsx'
-import UncontrolledExample from './components/carousel.jsx';
-
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
@@ -17,7 +6,10 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import UncontrolledExample from './components/carousel.jsx';
 import Lista from './components/lista.jsx';
 import Switch from 'components/fondo.jsx';
-
+// Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap Bundle JS
+//import FluidExample from 'components/image.jsx';
 function App() {
   return (
     <div className="App" style={{ textAlign: 'center' }}>
