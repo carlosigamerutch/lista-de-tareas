@@ -1,19 +1,22 @@
-import React from 'react';
-import Lista from './components/lista.jsx';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import 'bootstrap/dist/css/bootstrap.min.css';
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
-import "bootstrap/dist/js/bootstrap.bundle.min";
+
+import 'style.css';
 
 //import FluidExample from 'components/image.jsx';
 
 import Switch from 'components/fondo.jsx'
 import UncontrolledExample from './components/carousel.jsx';
+
+import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import UncontrolledExample from './components/carousel.jsx';
+import Lista from './components/lista.jsx';
+import Switch from 'components/fondo.jsx';
 
 function App() {
   return (
@@ -46,19 +49,9 @@ function App() {
     </div>
   );
 }
-fetch('https://calendar-json.googleapis.com')
-      .then(response => response.json())
-      .then(json => console.log(json))
 
 
-      try {
-        const data = require('completed.json');
-        console.log('Contenido del archivo:', data);
-      } catch (error) {
-        console.error('Error al leer el archivo de forma síncrona: ' + error);
-      }     
 
-      
 
 fetch('https://jsonplaceholder.typicode.com/todos/1')
       .then(response => response.json())
